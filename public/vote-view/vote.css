@@ -1,0 +1,145 @@
+h3 {
+	font-size: 18px;
+	margin-bottom: 40px;
+	line-height: 1.5;
+}
+
+.form-errors {
+	color: #bf0e0e;
+	margin-top: -20px;
+}
+
+ul.candidate-list {
+	margin: 30px 0;
+}
+
+ul.candidate-list li + li {
+	margin-top: 25px;
+}
+
+ul.candidate-list li .candidate {
+	display: block;
+	position: relative;
+	padding-left: 80px;
+	cursor: pointer;
+}
+
+ul.candidate-list li .candidate .candidate-content {
+	padding: 25px 20px;
+	font-size: 24px;
+	line-height: 1;
+}
+
+ul.candidate-list li .candidate input.radio-button {
+	vertical-align: middle;
+	margin: 0 5px 0 0;
+}
+
+ul.candidate-list li .candidate .candidate-name {
+	color: #666;
+	
+	-webkit-transition: color 50ms linear;
+}
+
+ul.candidate-list li .candidate input.radio-button:checked + .candidate-name {
+	color: #000;
+}
+
+ul.candidate-list li .candidate .candidate-image {
+	position: absolute;
+	left: -5px;
+	top: -5px;
+	bottom: -5px;
+	width: 85px;
+	background: #f8f8f8 no-repeat center;
+	background-size: cover;
+	
+	-webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+	        border-radius: 6px;
+	
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2), inset 0 0 0 1px rgba(0,0,0,0.3);
+	
+	-webkit-transition: -webkit-transform 50ms linear;
+}
+ul.candidate-list li .candidate .candidate-image .candidate-check {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	background-color: rgba(0,0,0,0.5);
+	
+	border-radius: 5px;
+	
+	-webkit-transition: opacity 50ms linear;
+}
+ul.candidate-list li .candidate .candidate-image .candidate-check:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	
+	background: url("../images/checkmark.png") no-repeat center;
+}
+
+ul.candidate-list li .candidate:hover .candidate-name {
+	color: #000;
+}
+
+ul.candidate-list li .candidate:hover .candidate-image {
+	-webkit-transform: scale(1.1);
+}
+
+ul.candidate-list li .candidate .candidate-image.checked {
+	-webkit-transform: scale(1.1);
+}
+
+ul.candidate-list li .candidate .candidate-image.checked .candidate-check {
+	opacity: 1;
+}
+
+button {
+	display: block;
+	color: #fff;
+	background: #395da8;
+	border: 0;
+	border-bottom: 3px solid #233866;
+	padding: 8px 10px;
+	width: 100%;
+	margin-top: 40px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	        border-radius: 4px;
+	
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+button:hover {
+	background: #4570cc;
+}
+button:active {
+	border-bottom: 0;
+	border-top: 3px solid transparent;
+}
+
+button.logout {
+	color: #666;
+	background: #ccc;
+	border-bottom-color: #aaa;
+	margin-top: -10px;
+	margin-bottom: 30px;
+}
+button.logout:hover {
+	color: #000;
+	background: #ddd;
+}
